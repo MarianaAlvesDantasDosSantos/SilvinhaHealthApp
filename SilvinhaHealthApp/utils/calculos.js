@@ -41,5 +41,9 @@ export const calcularTMB = (peso, altura, idade, sexo) => {
 
     if (sexo === 'masculino') {
         tmb = (10 * peso) + (6.25 * alturaCm) - (5 * idade) + 5;
+    } else {
+        tmb = (10 * peso) + (6.25 * alturaCm) - (5 * altura) - 161;
     }
+
+    return Math.round(tmb);
 }
