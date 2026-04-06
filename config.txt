@@ -10,7 +10,8 @@ npm i
 
 -- Executar o projeto
 npm expo start
-npx expo start --android
+
+
 
 -- Instalando os pacotes
 cd SilvinhaHealthApp
