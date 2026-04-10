@@ -2,25 +2,32 @@ import React from 'react'
 import { Stack } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 
-export default function Layout () {
+export default function Layout() {
   return (
     <>
-    <StatusBar style='dark'/>
-    <Stack
-      screenOptions={{
-        headerStyle: {backgroundColor: "#f9f9f9"},
-        headerTintColor: '#333',
-        headerTitleStyle: {fontWeight: 'bold'},
-      }}
-    >
-       <Stack.Screen
-       name='index'
-       options={{
-        title: 'Silvinha Health App',
-        headerShown: true
-       }}
-       />
-    </Stack>
+      <StatusBar style='dark' />
+      <Stack
+        screenOptions={{
+          headerStyle: { backgroundColor: "#f9f9f9" },
+          headerTintColor: '#333',
+          headerTitleStyle: { fontWeight: 'bold' },
+        }}
+      >
+        <Stack.Screen
+          name='index'
+          options={{
+            title: 'Silvinha Health App',
+            headerShown: true
+          }}
+        />
+        <Stack.Screen
+          name="imc"
+          options={{
+            title: 'Calculadora de IMC',
+            headerShown: true
+          }}
+        />
+      </Stack>
     </>
   );
 }
