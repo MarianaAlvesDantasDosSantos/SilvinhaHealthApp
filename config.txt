@@ -10,7 +10,7 @@ npm i
 
 -- Executar o projeto
 npm expo start
-npx expo start --androidy
+npx expo start --android
 
 
 
